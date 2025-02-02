@@ -1,15 +1,14 @@
-import Hero from "@/components/Hero";
-import BlogsCard from "@/components/BlogsCard";
-import Footer from "@/components/footer";
 
-
-
-export default function Home() {
+//-
+import Header from "@/components/Header";
+import HomePage from "./home/page"; // Fixed import name to avoid conflict with local declaration//+
+import Footer from "@/components/footer/page";
+export default function Home(){
   return (
-    <main>
-      <Hero />
-      <BlogsCard />
+    <div >
+      <Header />
+      <HomePage />
       <Footer />
-    </main>
-  );
+    </div>
+  )
 }
